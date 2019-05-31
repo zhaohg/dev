@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans-4.2.xsd"
+       default-autowire="byName">
+
+    <bean id="messageListeners" class="com.zhaohg.demo.MessageListenerImpl"/>
+
+    <!-- 导入Spring配置文件 -->
+    <bean id="rocketMqConsumer" class="org.apache.rocketmq.client.consumer.DefaultMQPushConsumer" init-method="start"
+          destroy-method="shutdown">
+        <property name="consumerGroup" value="rocketMqConsumer"/>
+        <property name="namesrvAddr" value="127.0.0.1:9876"/>
+        <property name="messageListener" ref="messageListeners"/>
+        <property name="subscription">
+            <map>
+                <entry key="PushTopic">
+                    <value>*</value>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="rocketMqProduct" class="org.apache.rocketmq.client.producer.DefaultMQProducer" init-method="start"
+          destroy-method="shutdown">
+        <property name="producerGroup" value="rocketmqProduct"/>
+        <property name="namesrvAddr" value="127.0.0.1:9876"/>
+    </bean>
+</beans>

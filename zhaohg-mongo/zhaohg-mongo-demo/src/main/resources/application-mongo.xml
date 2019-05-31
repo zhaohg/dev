@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd"
+
+       default-autowire="byName">
+
+    <context:component-scan base-package="com.zhaohg.dao.mongodb"/>
+
+    <bean id="mongoClientOptions" class="com.zhaohg.dao.mongodb.util.MongoClientOptionsBuild">
+        <property name="connectionsPerHost" value="${mongodb.connectionsPerHost}"/>
+        <property name="connectTimeout" value="${mongodb.connectTimeout}"/>
+        <property name="socketTimeout" value="${mongodb.socketTimeout}"/>
+        <property name="maxWaitTime" value="${mongodb.maxWaitTime}"/>
+        <property name="socketKeepAlive" value="${mongodb.socketKeepAlive}"/>
+        <property name="threadsAllowed" value="${mongodb.threadsAllowed}"/>
+    </bean>
+
+    <bean id="mongo" class="com.zhaohg.dao.mongodb.util.MongodbManager">
+        <property name="host" value="${mongodb.host}"/>
+        <property name="port" value="${mongodb.port}"/>
+        <property name="dbName" value="${mongodb.dbname}"/>
+        <property name="options" ref="mongoClientOptions"/>
+    </bean>
+
+    <bean id="mongodborderDAO" class="com.zhaohg.dao.mongodb.MongodbOrderDAO">
+        <property name="mongodbManager" ref="mongo"/>
+    </bean>
+</beans>

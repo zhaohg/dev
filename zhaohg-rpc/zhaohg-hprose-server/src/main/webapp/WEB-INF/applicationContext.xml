@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation=
+               "http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+                http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+                http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd"
+       default-autowire="byName">
+
+    <bean id="helloService" class="com.zhaohg.hprose.HproseProxyFactoryBean">
+        <property name="serviceUrl" value="tcp://127.0.0.1:4321"/>
+        <property name="serviceInterface" value="com.zhaohg.hprose.server.IHelloService"/>
+    </bean>
+
+    <context:component-scan base-package="com.zhaohg.hprose"/>
+
+    <mvc:annotation-driven>
+        <mvc:message-converters>
+            <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
+    <!-- Enables the Spring MVC @Controller programming model -->
+    <!-- 切记：该行代码不能删掉，用来解析 body 数据格式化。 踩了2次坑了 -->
+    <mvc:annotation-driven conversion-service="conversionService"/>
+
+    <!-- Only needed because we install custom converters to support the examples
+        in the org.springframewok.samples.mvc.convert package -->
+    <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean"/>
+</beans>

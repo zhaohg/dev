@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cachecloud-open-web:war">
+    <output-path>$PROJECT_DIR$/../cachecloud/cachecloud-open-web/target</output-path>
+    <root id="archive" name="cachecloud-open-web-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="cachecloud-open-web:war exploded" />
+    </root>
+  </artifact>
+</component>

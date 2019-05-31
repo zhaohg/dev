@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Spring-MVC-REST:war">
+    <output-path>$PROJECT_DIR$/../Spring-MVC-REST-MyBatis/target</output-path>
+    <root id="archive" name="Spring-MVC-REST-1.0.war">
+      <element id="artifact" artifact-name="Spring-MVC-REST:war exploded" />
+    </root>
+  </artifact>
+</component>

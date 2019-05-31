@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../cachecloud/cachecloud-open-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../CacheService" />
+    <file type="web" url="file://$PROJECT_DIR$" />
+    <file type="web" url="file://$PROJECT_DIR$/../shangluhua" />
+    <file type="web" url="file://$PROJECT_DIR$/../Spring-MVC-REST-MyBatis" />
+    <file type="web" url="file://$PROJECT_DIR$/../spring-quartz-zookeeper-sample" />
+    <file type="web" url="file://$PROJECT_DIR$/../spring-session" />
+    <file type="web" url="file://$PROJECT_DIR$/../SpringLucene" />
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc" />
+    <file type="web" url="file://$PROJECT_DIR$/../xultimate-captcha" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../zookeeper/pom.xml" />
+        <option value="$PROJECT_DIR$/../shangluhua/pom.xml" />
+        <option value="$PROJECT_DIR$/../Spring-MVC-REST-MyBatis/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring-quartz-zookeeper-sample/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring-session/pom.xml" />
+        <option value="$PROJECT_DIR$/../SpringBootQuartzCluster/pom.xml" />
+        <option value="$PROJECT_DIR$/../SpringLucene/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/../xultimate-captcha/pom.xml" />
+        <option value="$PROJECT_DIR$/../app_monitor/pom.xml" />
+        <option value="$PROJECT_DIR$/../cachecloud/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

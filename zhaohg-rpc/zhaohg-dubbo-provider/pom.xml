@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>zhaohg-rpc</artifactId>
+        <groupId>com.zhaohg</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>zhaohg-dubbo-provider</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>zhaohg-dubbo-provider</name>
+    <packaging>war</packaging>
+
+    <build>
+        <finalName>demo-dubbo-provider</finalName>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>4.3.1.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+
+    </dependencies>
+</project>

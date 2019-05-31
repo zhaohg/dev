@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="xultimate-captcha:war">
+    <output-path>$PROJECT_DIR$/../xultimate-captcha/target</output-path>
+    <root id="archive" name="xultimate-captcha.war">
+      <element id="artifact" artifact-name="xultimate-captcha:war exploded" />
+    </root>
+  </artifact>
+</component>

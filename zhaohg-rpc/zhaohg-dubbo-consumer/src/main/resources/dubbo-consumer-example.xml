@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <context:property-placeholder location="classpath:dubbo-example.properties"/>
+    <!-- 同一个工程只配置一份即可 -->
+    <dubbo:application name="zhaohg-dubbo" owner="zhaohg"/>
+    <!-- 服务应用方调用的超时时间。默认不配置，则以服务提供方的超时时间为准。check为false表示延迟加载dubbo依赖的服务-->
+    <dubbo:consumer retries="0" timeout="${dubbo.consumer.timeout}" check="false"/>
+    <!-- dubbo注册到zookeeper，用于预发布或生产环境 -->
+    <!-- <dubbo:registry protocol="zookeeper" address="${zookeeper.addr}" /> -->
+    <!-- 像引用spring的bean服务一样引用dubbo提供的接口，用于预发布和生产环境-->
+    <!-- <dubbo:reference id="dubboServiceTest"  interface="DubboServiceTest" /> -->
+    <!-- dubbo直连方式，只用于开发或测试阶段 -->
+    <dubbo:reference id="dubboService" interface="com.zhaohg.service.DubboService" url="dubbo://127.0.0.1:20880"/>
+</beans>

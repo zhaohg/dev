@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cacheservice:war">
+    <output-path>$PROJECT_DIR$/../CacheService/target</output-path>
+    <root id="archive" name="cacheservice-1.0.0-BUILD-SNAPSHOT.war">
+      <element id="artifact" artifact-name="cacheservice:war exploded" />
+    </root>
+  </artifact>
+</component>

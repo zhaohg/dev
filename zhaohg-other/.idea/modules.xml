@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Note.iml" filepath="$PROJECT_DIR$/Note.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SpringLucene/SprSecurity.iml" filepath="$PROJECT_DIR$/../SpringLucene/SprSecurity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Spring-MVC-REST-MyBatis/Spring-MVC-REST.iml" filepath="$PROJECT_DIR$/../Spring-MVC-REST-MyBatis/Spring-MVC-REST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app_monitor/app_monitor.iml" filepath="$PROJECT_DIR$/../app_monitor/app_monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../cachecloud/cachecloud-open-client/cachecloud-jedis/cachecloud-jedis.iml" filepath="$PROJECT_DIR$/../cachecloud/cachecloud-open-client/cachecloud-jedis/cachecloud-jedis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../cachecloud/cachecloud-open-client/cachecloud-open-client.iml" filepath="$PROJECT_DIR$/../cachecloud/cachecloud-open-client/cachecloud-open-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../cachecloud/cachecloud-open-client/cachecloud-open-client-basic/cachecloud-open-client-basic.iml" filepath="$PROJECT_DIR$/../cachecloud/cachecloud-open-client/cachecloud-open-client-basic/cachecloud-open-client-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../cachecloud/cachecloud-open-client/cachecloud-open-client-redis/cachecloud-open-client-redis.iml" filepath="$PROJECT_DIR$/../cachecloud/cachecloud-open-client/cachecloud-open-client-redis/cachecloud-open-client-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../cachecloud/cachecloud-open-common/cachecloud-open-common.iml" filepath="$PROJECT_DIR$/../cachecloud/cachecloud-open-common/cachecloud-open-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../cachecloud/cachecloud-open-client/cachecloud-open-jedis-stat/cachecloud-open-jedis-stat.iml" filepath="$PROJECT_DIR$/../cachecloud/cachecloud-open-client/cachecloud-open-jedis-stat/cachecloud-open-jedis-stat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../cachecloud/cachecloud-open-parent.iml" filepath="$PROJECT_DIR$/../cachecloud/cachecloud-open-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../cachecloud/cachecloud-open-web/cachecloud-open-web.iml" filepath="$PROJECT_DIR$/../cachecloud/cachecloud-open-web/cachecloud-open-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shangluhua/shangluhua.iml" filepath="$PROJECT_DIR$/../shangluhua/shangluhua.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../spring-session/spring-session.iml" filepath="$PROJECT_DIR$/../spring-session/spring-session.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SpringBootQuartzCluster/springbootQuartz.iml" filepath="$PROJECT_DIR$/../SpringBootQuartzCluster/springbootQuartz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springmvc/springmvc.iml" filepath="$PROJECT_DIR$/../springmvc/springmvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../xultimate-captcha/xultimate-captcha.iml" filepath="$PROJECT_DIR$/../xultimate-captcha/xultimate-captcha.iml" />
+    </modules>
+  </component>
+</project>

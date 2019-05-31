@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="YiQuart:war">
+    <output-path>$PROJECT_DIR$/../spring-quartz-zookeeper-sample/target</output-path>
+    <root id="archive" name="YiQuart.war">
+      <element id="artifact" artifact-name="YiQuart:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Annotation profile for zookeeper" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zookeeper" />
+      </profile>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="app_monitor" />
+        <module name="Note" />
+        <module name="shangluhua" />
+        <module name="Spring-MVC-REST" />
+        <module name="spring-session" />
+        <module name="springbootQuartz" />
+        <module name="springmvc" />
+        <module name="SprSecurity" />
+        <module name="xultimate-captcha" />
+        <module name="YiQuart" />
+      </profile>
+      <profile name="Annotation profile for cachecloud-jedis" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cachecloud-jedis" />
+      </profile>
+      <profile name="Annotation profile for cachecloud-open-client-redis" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cachecloud-open-client-redis" />
+      </profile>
+      <profile name="Annotation profile for cachecloud-open-client-basic" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cachecloud-open-client-basic" />
+      </profile>
+      <profile name="Annotation profile for cachecloud-open-common" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cachecloud-open-common" />
+      </profile>
+      <profile name="Annotation profile for cachecloud-open-jedis-stat" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cachecloud-open-jedis-stat" />
+      </profile>
+      <profile name="Annotation profile for cachecloud-open-web" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cachecloud-open-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="app_monitor" target="1.6" />
+      <module name="cachecloud-jedis" target="1.7" />
+      <module name="cachecloud-open-client" target="1.7" />
+      <module name="cachecloud-open-client-basic" target="1.7" />
+      <module name="cachecloud-open-client-redis" target="1.7" />
+      <module name="cachecloud-open-common" target="1.7" />
+      <module name="cachecloud-open-jedis-stat" target="1.7" />
+      <module name="cachecloud-open-parent" target="1.7" />
+      <module name="cachecloud-open-web" target="1.7" />
+      <module name="cacheservice" target="1.6" />
+      <module name="Note" target="1.8" />
+      <module name="redis" target="1.6" />
+      <module name="shangluhua" target="1.8" />
+      <module name="Spring-MVC-REST" target="1.6" />
+      <module name="spring-session" target="1.5" />
+      <module name="springbootQuartz" target="1.8" />
+      <module name="springmvc" target="1.5" />
+      <module name="SprSecurity" target="1.7" />
+      <module name="xultimate-captcha" target="1.7" />
+      <module name="YiQuart" target="1.5" />
+      <module name="zookeeper" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

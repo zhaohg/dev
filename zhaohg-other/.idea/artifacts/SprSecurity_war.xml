@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SprSecurity:war">
+    <output-path>$PROJECT_DIR$/../SpringLucene/target</output-path>
+    <root id="archive" name="SpringLuceneSearchEngine.war">
+      <element id="artifact" artifact-name="SprSecurity:war exploded" />
+    </root>
+  </artifact>
+</component>

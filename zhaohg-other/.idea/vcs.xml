@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../SpringBootQuartzCluster" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../SpringLucene" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../app_monitor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../spring-session" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../xultimate-captcha" vcs="Git" />
+  </component>
+</project>

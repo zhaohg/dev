@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="xultimate-captcha:war exploded">
+    <output-path>$PROJECT_DIR$/../xultimate-captcha/target/xultimate-captcha</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="xultimate-captcha" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.danielli.xultimate:xultimate-core:1.0.0-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: org.danielli.xultimate:xultimate-context-support:1.0.0-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: com.jhlabs:filters:2.0.235" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../xultimate-captcha/target/xultimate-captcha/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="xultimate-captcha/web/Web" />
+    </root>
+  </artifact>
+</component>

@@ -15,12 +15,12 @@ public class TryFinally {
      * 2: astore_0
      * 3: aload_0
      * 4: astore_2
-     * 5: ldc           #36                 // String imooc
+     * 5: ldc           #36                 // String zhaohg
      * 7: astore_0
      * 8: aload_2
      * 9: areturn
      * 10: astore_1
-     * 11: ldc           #36                 // String imooc
+     * 11: ldc           #36                 // String zhaohg
      * 13: astore_0
      * 14: aload_1
      * 15: athrow
@@ -30,7 +30,7 @@ public class TryFinally {
         try {
             return str;
         } finally {
-            str = "imooc";
+            str = "zhaohg";
         }
     }
 }

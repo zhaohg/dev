@@ -28,9 +28,9 @@ public class Proxy {
         }
 
         String str =
-                "package com.imooc.jdkproxy2;" + rt +
+                "package com.zhaohg.jdkproxy2;" + rt +
                         "import java.lang.reflect.Method;" + rt +
-                        "import com.imooc.jdkproxy2.InvocationHandler;" + rt +
+                        "import com.zhaohg.jdkproxy2.InvocationHandler;" + rt +
                         "public class $Proxy0 implements " + infce.getName() + " {" + rt +
                         "	public $Proxy0(InvocationHandler h) {" + rt +
                         "		this.h = h;" + rt +
@@ -39,7 +39,7 @@ public class Proxy {
                         methodStr + rt +
                         "}";
         //产生代理类的java文件
-        String filename = System.getProperty("user.dir") + "/bin/com/imooc/jdkproxy2/$Proxy0.java";
+        String filename = System.getProperty("user.dir") + "/bin/com/zhaohg/jdkproxy2/$Proxy0.java";
         File file = new File(filename);
         FileUtils.writeStringToFile(file, str, "utf-8");
 

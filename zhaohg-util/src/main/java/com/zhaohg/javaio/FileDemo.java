@@ -11,7 +11,7 @@ public class FileDemo {
      */
     public static void main(String[] args) {
         // 了解构造函数的情况  查帮助
-        File file = new File("E:\\javaio\\imooc");
+        File file = new File("E:\\javaio\\zhaohg");
         //System.out.println(file.exists());
         if (!file.exists())
             file.mkdir(); //file.mkdirs()

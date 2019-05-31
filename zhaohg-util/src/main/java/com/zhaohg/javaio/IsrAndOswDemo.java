@@ -11,7 +11,7 @@ public class IsrAndOswDemo {
         FileInputStream in = new FileInputStream("e:\\javaio\\utf8.txt");
         InputStreamReader isr = new InputStreamReader(in, "utf-8");//默认项目的编码,操作的时候，要写文件本身的编码格式
 
-        FileOutputStream out = new FileOutputStream("e:\\javaio\\imoocutf81.txt");
+        FileOutputStream out = new FileOutputStream("e:\\javaio\\zhaohgutf81.txt");
         OutputStreamWriter osw = new OutputStreamWriter(out, "utf-8");
         /*int c ;
 		while((c = isr.read())!=-1){

@@ -18,7 +18,7 @@ public class Tea extends RefreshBeverage {
     @Override
     /*
      * 子类通过覆盖的形式选择挂载钩子函数
-     * @see com.imooc.pattern.template.RefreshBeverage#isCustomerWantsCondiments()
+     * @see com.zhaohg.pattern.template.RefreshBeverage#isCustomerWantsCondiments()
      */
     protected boolean isCustomerWantsCondiments() {
         return false;

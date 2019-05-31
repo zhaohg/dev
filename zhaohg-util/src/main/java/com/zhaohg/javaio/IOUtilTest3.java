@@ -10,8 +10,8 @@ public class IOUtilTest3 {
      */
     public static void main(String[] args) {
         try {
-            IOUtil.copyFile(new File("e:\\javaio\\imooc.txt"), new File(
-                    "e:\\javaio\\imooc1.txt"));
+            IOUtil.copyFile(new File("e:\\javaio\\zhaohg.txt"), new File(
+                    "e:\\javaio\\zhaohg1.txt"));
         } catch (IOException e) {
             e.printStackTrace();
         }

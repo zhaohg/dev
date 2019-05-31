@@ -8,14 +8,14 @@ import java.io.PrintWriter;
 
 public class BrAndBwOrPwDemo {
     public static void main(String[] args) throws IOException {
-        FileInputStream fileInputStream = new FileInputStream("e:\\javaio\\imooc.txt");
+        FileInputStream fileInputStream = new FileInputStream("e:\\javaio\\zhaohg.txt");
         InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
         //对文件进行读写操作
         BufferedReader br = new BufferedReader(inputStreamReader);
         /*BufferedWriter bw = new BufferedWriter(
 				new OutputStreamWriter(
-						new FileOutputStream("e:\\javaio\\imooc3.txt")));*/
-        PrintWriter pw = new PrintWriter("e:\\javaio\\imooc4.txt");
+						new FileOutputStream("e:\\javaio\\zhaohg3.txt")));*/
+        PrintWriter pw = new PrintWriter("e:\\javaio\\zhaohg4.txt");
         //PrintWriter pw1 = new PrintWriter(outputStream,boolean autoFlush);
         String line;
         while ((line = br.readLine()) != null) {

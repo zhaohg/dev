@@ -10,9 +10,9 @@ public class Test02 {
     public static void main(String[] args) {
         try {
             //创建一个URL实例
-            URL imooc = new URL("http://www.imooc.com");
+            URL zhaohg = new URL("http://www.zhaohg.com");
             //?后面表示参数，#后面表示锚点
-            URL url = new URL(imooc, "/index.html?username=tom#demo3");
+            URL url = new URL(zhaohg, "/index.html?username=tom#demo3");
             System.out.println("协议：" + url.getProtocol());
             System.out.println("主机：" + url.getHost());
             //如果未指定端口号，则使用默认的端口号，此时getPort()方法返回值为-1

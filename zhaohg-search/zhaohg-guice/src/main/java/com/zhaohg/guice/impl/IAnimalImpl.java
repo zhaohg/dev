@@ -5,7 +5,7 @@ import com.zhaohg.guice.IAnimal;
 /**
  * @program: guice
  * @description:
- * @author: 赖键锋
+ * @author: zhaohg
  * @create: 2018-08-29 20:53
  **/
 public class IAnimalImpl implements IAnimal {

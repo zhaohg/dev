@@ -12,7 +12,7 @@ public class EncodeTest {
     }
 
     private static void test() {
-        String dir = "D:/fbb/myWorkSpace_DW07/FinalDB/";
+        String dir = "/Users/zhaohg/fbb/myWorkSpace_DW07/FinalDB/";
         String fileName = "FinalDB2013313-jzy-v001glasscom3243ac0f-f7fb-4517-9102-b5f1934536f7";
         try {
             String encoding = codeString(dir, fileName);

@@ -22,8 +22,8 @@ public class TestIndexBackupRecovery {
     public static final Logger logger = LoggerFactory.getLogger(TestIndexBackupRecovery.class);
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        String f = "D:/index_test";
-        String d = "D:/index_back";
+        String f = "/Users/zhaohg/index_test";
+        String d = "/Users/zhaohg/index_back";
         IndexWriterConfig indexWriterConfig = new IndexWriterConfig(new StandardAnalyzer());
         indexWriterConfig.setIndexDeletionPolicy(new SnapshotDeletionPolicy(new KeepOnlyLastCommitDeletionPolicy()));
         IndexWriter writer = new IndexWriter(FSDirectory.open(Paths.get(f)), indexWriterConfig);

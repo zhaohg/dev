@@ -5,7 +5,7 @@ import com.google.inject.Injector;
 /**
  * @program: guice
  * @description:
- * @author: 赖键锋
+ * @author: zhaohg
  * @create: 2018-08-29 21:10
  **/
 public class Main {

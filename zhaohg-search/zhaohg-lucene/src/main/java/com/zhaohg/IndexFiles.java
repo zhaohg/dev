@@ -26,8 +26,8 @@ import java.nio.file.attribute.BasicFileAttributes;
 
 public class IndexFiles {
     public static void main(String[] args) {
-        String indexPath = "D:/lucene_test/index"; // 建立索引文件的目录
-        String docsPath = "D:/lucene_test/docs"; // 读取文本文件的目录
+        String indexPath = "/Users/zhaohg/lucene_test/index"; // 建立索引文件的目录
+        String docsPath = "/Users/zhaohg/lucene_test/docs"; // 读取文本文件的目录
 
         Path docDir = Paths.get(docsPath);
 

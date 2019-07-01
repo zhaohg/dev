@@ -20,7 +20,7 @@ import java.nio.file.Paths;
 
 public class SearchFiles {
     public static void main(String[] args) throws Exception {
-        String indexPath = "D:/lucene_test/index"; // 建立索引文件的目录
+        String indexPath = "/Users/zhaohg/lucene_test/index"; // 建立索引文件的目录
         String field = "contents";
         IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(indexPath)));
         IndexSearcher searcher = new IndexSearcher(reader);

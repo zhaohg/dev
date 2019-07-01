@@ -8,7 +8,7 @@ import com.zhaohg.guice.impl.IToolImpl;
 /**
  * @program: guice
  * @description:
- * @author: 赖键锋
+ * @author: zhaohg
  * @create: 2018-08-29 20:49
  **/
 public class ToolModule extends AbstractModule {

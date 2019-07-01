@@ -590,17 +590,17 @@ public class ElasticSearchTest {
     @Test
     public void updateByQueryRequestBuilders() {
 
-//      Map<String, com.zhaohg.Object> maps=new HashMap<>();
+//      Map<String, com.zhaohg.object> maps=new HashMap<>();
 //      maps.put("orgin_session_id", 10);
 //      maps.put("orgin_session_id", 11);
 //      maps.put("orgin_session_id", 12);
 //      maps.put("orgin_session_id", 13);
 //
-//      Set<Map<String, com.zhaohg.Object>> docs = new HashSet<>();
+//      Set<Map<String, com.zhaohg.object>> docs = new HashSet<>();
 //      docs.add(maps);
 //
 //      UpdateByQueryRequestBuilder  ubqrb = UpdateByQueryAction.INSTANCE.newRequestBuilder(client);
-//        for (Map<String, com.zhaohg.Object> doc : docs) {
+//        for (Map<String, com.zhaohg.object> doc : docs) {
 //            if (doc==null || doc.isEmpty()){
 //                return;
 //            }

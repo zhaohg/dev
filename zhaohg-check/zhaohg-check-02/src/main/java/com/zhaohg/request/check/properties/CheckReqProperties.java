@@ -10,8 +10,7 @@ import org.springframework.stereotype.Component;
  * @since JDK 1.8
  */
 @Component
-//定义配置前缀
-@ConfigurationProperties(prefix = "sbc.request.check")
+@ConfigurationProperties(prefix = "sbc.request.check")//定义配置前缀
 public class CheckReqProperties {
     private String redisKey;//写入redis中的前缀
     private Long   redisTimeout;//redis的过期时间 默认是天

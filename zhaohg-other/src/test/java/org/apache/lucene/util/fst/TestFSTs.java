@@ -608,7 +608,7 @@ public class TestFSTs extends LuceneTestCase {
 
     String[] strings = new String[] {"station", "commotion", "elation", "elastic", "plastic", "stop", "ftop", "ftation", "stat"};
 
-    final Builder<com.zhaohg.Object> builder = new Builder<com.zhaohg.Object>(FST.INPUT_TYPE.BYTE1,
+    final Builder<com.zhaohg.object> builder = new Builder<com.zhaohg.object>(FST.INPUT_TYPE.BYTE1,
                                                         0, 0,
                                                         true,
                                                         true,
@@ -621,13 +621,13 @@ public class TestFSTs extends LuceneTestCase {
     for(String s : strings) {
       builder.add(Util.toIntsRef(new BytesRef(s), scratch), outputs.getNoOutput());
     }
-    final FST<com.zhaohg.Object> fst = builder.finish();
+    final FST<com.zhaohg.object> fst = builder.finish();
     System.out.println("DOT before rewrite");
     Writer w = new OutputStreamWriter(new FileOutputStream("/mnt/scratch/before.dot"));
     Util.toDot(fst, w, false, false);
     w.close();
 
-    final FST<com.zhaohg.Object> rewrite = new FST<com.zhaohg.Object>(fst, 1, 100);
+    final FST<com.zhaohg.object> rewrite = new FST<com.zhaohg.object>(fst, 1, 100);
 
     System.out.println("DOT after rewrite");
     w = new OutputStreamWriter(new FileOutputStream("/mnt/scratch/after.dot"));

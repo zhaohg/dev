@@ -26,12 +26,9 @@ import java.util.concurrent.TimeUnit;
  * Date: 2017/7/31 20:07
  * @since JDK 1.8
  */
-//切面注解
-@Aspect
-//扫描
-@Component
-//开启cglib代理
-@EnableAspectJAutoProxy(proxyTargetClass = true)
+@Aspect//切面注解
+@Component//扫描
+@EnableAspectJAutoProxy(proxyTargetClass = true)//开启cglib代理
 public class ReqNoDrcAspect {
     private static Logger logger = LoggerFactory.getLogger(ReqNoDrcAspect.class);
 

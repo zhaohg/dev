@@ -6,7 +6,7 @@ import java.util.List;
  * @program: elastic
  * @description: 4、Bool检索( Bool Query) 的参数类
  * @author: zhaohg
- * @create: 2018-08-23 21:08
+ * @create: 2017-08-23 21:08
  **/
 public class BoolForm {
     private List<String> shouldTitles;

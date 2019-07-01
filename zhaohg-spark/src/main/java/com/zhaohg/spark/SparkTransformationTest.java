@@ -385,7 +385,7 @@ public class SparkTransformationTest {
 //            }
 //
 //            @Override
-//            public int getPartition(com.zhaohg.Object key) {
+//            public int getPartition(com.zhaohg.object key) {
 //                return (key.toString()).hashCode() % numPartitions();
 //            }
 //        });
@@ -415,7 +415,7 @@ public class SparkTransformationTest {
 //            @Override
 //            public int numPartitions() {        return 2;    }
 //            @Override
-//            public int getPartition(com.zhaohg.Object key) { return (key.toString()).hashCode()%numPartitions();
+//            public int getPartition(com.zhaohg.object key) { return (key.toString()).hashCode()%numPartitions();
 //            }
 //        });
 //        System.out.println(leftJoinRDD2);
@@ -441,7 +441,7 @@ public class SparkTransformationTest {
 //            @Override
 //            public int numPartitions() {        return 2;    }
 //            @Override
-//            public int getPartition(com.zhaohg.Object key) { return (key.toString()).hashCode()%numPartitions();    }
+//            public int getPartition(com.zhaohg.object key) { return (key.toString()).hashCode()%numPartitions();    }
 //        });
 //        System.out.println(rightJoinRDD2);
     }

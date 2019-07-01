@@ -5,10 +5,9 @@ import com.zhaohg.sbcorder.common.enums.StatusEnum;
 import java.io.Serializable;
 
 /**
- * Function:通用异常
+ * 通用异常
  * @author zhaohg
  * Date: 2017/7/13 12:16
- * @since JDK 1.8
  */
 public class SBCException extends RuntimeException implements Serializable {
     private static final long serialVersionUID = -8806370060612489108L;

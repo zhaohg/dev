@@ -54,8 +54,8 @@ public class TestNoMergePolicy extends BaseMergePolicyTestCase {
         for (Method m : NoMergePolicy.class.getMethods()) {
             // getDeclaredMethods() returns just those methods that are declared on
             // NoMergePolicy. getMethods() returns those that are visible in that
-            // context, including ones from com.zhaohg.Object. So just filter out com.zhaohg.Object. If in
-            // the future MergePolicy will extend a different class than com.zhaohg.Object, this
+            // context, including ones from com.zhaohg.object. So just filter out com.zhaohg.object. If in
+            // the future MergePolicy will extend a different class than com.zhaohg.object, this
             // will need to change.
             if (m.getName().equals("clone")) {
                 continue;

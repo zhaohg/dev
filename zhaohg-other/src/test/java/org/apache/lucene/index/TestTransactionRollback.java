@@ -109,11 +109,11 @@ public class TestTransactionRollback extends LuceneTestCase {
 
   /*
   private void showAvailableCommitPoints() throws Exception {
-    com.zhaohg.Collection commits = DirectoryReader.listCommits(dir);
+    com.zhaohg.collection commits = DirectoryReader.listCommits(dir);
     for (Iterator iterator = commits.iterator(); iterator.hasNext();) {
       IndexCommit comm = (IndexCommit) iterator.next();
       System.out.print("\t Available commit point:["+comm.getUserData()+"] files=");
-      com.zhaohg.Collection files = comm.getFileNames();
+      com.zhaohg.collection files = comm.getFileNames();
       for (Iterator iterator2 = files.iterator(); iterator2.hasNext();) {
         String filename = (String) iterator2.next();
         System.out.print(filename+", ");
@@ -195,7 +195,7 @@ public class TestTransactionRollback extends LuceneTestCase {
             /*
             System.out.print("\tRolling back commit point:" +
                              " UserData="+commit.getUserData() +")  ("+(commits.size()-1)+" commit points left) files=");
-            com.zhaohg.Collection files = commit.getFileNames();
+            com.zhaohg.collection files = commit.getFileNames();
             for (Iterator iterator2 = files.iterator(); iterator2.hasNext();) {
               System.out.print(" "+iterator2.next());
             }

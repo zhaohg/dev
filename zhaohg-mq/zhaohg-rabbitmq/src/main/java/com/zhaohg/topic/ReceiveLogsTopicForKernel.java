@@ -1,7 +1,7 @@
 package com.zhaohg.topic;
 
 /**
- * Created by zhaohg on 2017/8/14.
+ * Created by zhaohg on 2018/8/14.
  */
 
 import com.rabbitmq.client.AMQP;

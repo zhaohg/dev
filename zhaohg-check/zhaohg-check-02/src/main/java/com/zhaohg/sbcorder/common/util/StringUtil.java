@@ -1,10 +1,9 @@
 package com.zhaohg.sbcorder.common.util;
 
 /**
- * Function:字符串工具类
+ * 字符串工具类
  * @author zhaohg
  * Date: 2017/6/7 下午11:45
- * @since JDK 1.8
  */
 public class StringUtil {
 

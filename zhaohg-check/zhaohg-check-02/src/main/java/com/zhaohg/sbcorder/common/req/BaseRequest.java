@@ -3,10 +3,8 @@ package com.zhaohg.sbcorder.common.req;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
- * Function:
  * @author zhaohg
  * Date: 2017/6/7 下午11:28
- * @since JDK 1.8
  */
 public class BaseRequest {
 

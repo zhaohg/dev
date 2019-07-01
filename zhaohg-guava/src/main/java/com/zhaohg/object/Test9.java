@@ -1,23 +1,20 @@
-package com.zhaohg.ordering;
+package com.zhaohg.object;
 
-import com.google.common.base.Function;
-import com.google.common.collect.Ordering;
+import com.google.common.base.MoreObjects;
 
 /**
  * @program: guava
- * @description: 强大的Ordering排序器
+ * @description: MoreObjects
  * @author: zhaohg
- * @create: 2018-08-30 21:05
+ * @create: 2018-08-30 20:55
  **/
-public class Test10 {
+public class Test9 {
     public static void main(String[] args) {
-        Person person1 = new Person("aa", 14);
-        Person person2 = new Person("bb", 13);
-        Ordering<Person> byOrdering = Ordering.natural().nullsFirst().onResultOf(
-                (Function<Person, String>) input -> input.getAge().toString());
-        byOrdering.compare(person1, person2);
-        System.out.println(byOrdering.compare(person1, person2));
-        // 1
+        Person person = new Person("zhaohg", 11);
+
+        String string = MoreObjects.toStringHelper("person").add("age", person.getAge()).toString();
+        System.out.println(string);
+        // person{age=11}
     }
 
     static class Person {

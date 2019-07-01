@@ -18,7 +18,7 @@ public class StringAdd {
      * 8: new           #21                 // class java/lang/StringBuilder
      * 11: dup
      * 12: aload_0
-     * 13: invokestatic  #23                 // Method java/lang/String.valueOf:(Ljava/lang/com.zhaohg.Object;)Ljava/lang/String;
+     * 13: invokestatic  #23                 // Method java/lang/String.valueOf:(Ljava/lang/com.zhaohg.object;)Ljava/lang/String;
      * 16: invokespecial #29                 // Method java/lang/StringBuilder."<init>":(Ljava/lang/String;)V   new StringBuilder（src）
      * 19: ldc           #32                 // String A
      * 21: invokevirtual #34                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;

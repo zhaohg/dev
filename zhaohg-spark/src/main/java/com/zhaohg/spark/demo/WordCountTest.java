@@ -10,7 +10,7 @@ import scala.Tuple2;
 import java.util.Arrays;
 
 /**
- * Created by zhaohg on 2017/3/7.
+ * Created by zhaohg on 2018/3/7.
  */
 
 public class WordCountTest {

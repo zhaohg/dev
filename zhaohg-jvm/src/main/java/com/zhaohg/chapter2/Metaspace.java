@@ -19,16 +19,16 @@ public class Metaspace extends ClassLoader {
         // 循环1000w次生成1000w个不同的类。
         for (int i = 0; i < 10000000; ++i) {
             ClassWriter cw = new ClassWriter(0);
-            // 定义一个类名称为Class{i}，它的访问域为public，父类为java.lang.com.zhaohg.Object，不实现任何接口
+            // 定义一个类名称为Class{i}，它的访问域为public，父类为java.lang.com.zhaohg.object，不实现任何接口
             cw.visit(Opcodes.V1_1, Opcodes.ACC_PUBLIC, "Class" + i, null,
-                    "java/lang/com.zhaohg.Object", null);
+                    "java/lang/com.zhaohg.object", null);
             // 定义构造函数<init>方法
             MethodVisitor mw = cw.visitMethod(Opcodes.ACC_PUBLIC, "<init>",
                     "()V", null, null);
             // 第一个指令为加载this
             mw.visitVarInsn(Opcodes.ALOAD, 0);
             // 第二个指令为调用父类Object的构造函数
-            mw.visitMethodInsn(Opcodes.INVOKESPECIAL, "java/lang/com.zhaohg.Object",
+            mw.visitMethodInsn(Opcodes.INVOKESPECIAL, "java/lang/com.zhaohg.object",
                     "<init>", "()V");
             // 第三条指令为return
             mw.visitInsn(Opcodes.RETURN);

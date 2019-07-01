@@ -4,10 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Function:
  * @author zhaohg
  * Date: 2017/6/7 下午11:43
- * @since JDK 1.8
  */
 public enum StatusEnum {
     /**

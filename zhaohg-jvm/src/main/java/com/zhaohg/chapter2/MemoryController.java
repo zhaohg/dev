@@ -10,8 +10,8 @@ import java.util.UUID;
 @RestController
 public class MemoryController {
 
-    private List<User>     userList  = new ArrayList<User>();
-    private List<Class<?>> classList = new ArrayList<Class<?>>();
+    private List<User>     userList  = new ArrayList<>();
+    private List<Class<?>> classList = new ArrayList<>();
 
     /**
      * 构建内存溢出

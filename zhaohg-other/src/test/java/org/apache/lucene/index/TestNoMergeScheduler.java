@@ -51,8 +51,8 @@ public class TestNoMergeScheduler extends LuceneTestCase {
         for (Method m : NoMergeScheduler.class.getMethods()) {
             // getDeclaredMethods() returns just those methods that are declared on
             // NoMergeScheduler. getMethods() returns those that are visible in that
-            // context, including ones from com.zhaohg.Object. So just filter out com.zhaohg.Object. If in
-            // the future MergeScheduler will extend a different class than com.zhaohg.Object,
+            // context, including ones from com.zhaohg.object. So just filter out com.zhaohg.object. If in
+            // the future MergeScheduler will extend a different class than com.zhaohg.object,
             // this will need to change.
             if (m.getDeclaringClass() != Object.class) {
                 assertTrue(m + " is not overridden !", m.getDeclaringClass() == NoMergeScheduler.class);

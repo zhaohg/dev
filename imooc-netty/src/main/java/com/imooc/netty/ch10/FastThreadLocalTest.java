@@ -31,7 +31,7 @@ public class FastThreadLocalTest {
             threadLocal0.set(new Object());
 
 //            while (true) {
-//                threadLocal0.set(new com.zhaohg.Object());
+//                threadLocal0.set(new com.zhaohg.object());
 //                try {
 //                    Thread.sleep(1);
 //                } catch (InterruptedException e) {

@@ -12,7 +12,7 @@ import org.apache.rocketmq.common.protocol.heartbeat.MessageModel;
 import java.util.List;
 
 /**
- * Created by zhaohg on 2017-10-26.
+ * Created by zhaohg on 2018-10-26.
  */
 public class BroadcastConsumer {
     public static void main(String[] args) throws Exception {

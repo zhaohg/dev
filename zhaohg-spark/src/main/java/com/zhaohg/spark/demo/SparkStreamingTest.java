@@ -13,7 +13,7 @@ import java.util.Arrays;
 import java.util.regex.Pattern;
 
 /**
- * Created by zhaohg on 2017/3/3.
+ * Created by zhaohg on 2018/3/3.
  */
 public class SparkStreamingTest {
     //    # TERMINAL 1:

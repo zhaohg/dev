@@ -141,7 +141,7 @@ public class TestCharArraySet extends LuceneTestCase {
             assertEquals("Size of unmodifiable set has changed", size, set.size());
         }
 
-        // This test was changed in 3.1, as a contains() call on the given com.zhaohg.Collection using the "correct" iterator's
+        // This test was changed in 3.1, as a contains() call on the given com.zhaohg.collection using the "correct" iterator's
         // current key (now a char[]) on a Set<String> would not hit any element of the CAS and therefor never call
         // remove() on the iterator
         try {

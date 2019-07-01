@@ -4,7 +4,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
 /**
- * Created by zhaohg on 2017/3/3.
+ * Created by zhaohg on 2018/3/3.
  */
 public class StreamingExamples {
 

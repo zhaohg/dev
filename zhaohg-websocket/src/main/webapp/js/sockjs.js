@@ -830,7 +830,7 @@
 
                 SockJS.prototype.send = function (data) {
                     // #13 - convert anything non-string to string
-                    // TODO this currently turns objects into [object com.zhaohg.Object]
+                    // TODO this currently turns objects into [object com.zhaohg.object]
                     if (typeof data !== 'string') {
                         data = '' + data;
                     }
@@ -1301,7 +1301,7 @@
                     // 18. Set the [[Extensible]] internal property of F to true.
 
                     // TODO
-                    // 19. Let thrower be the [[ThrowTypeError]] function com.zhaohg.Object (13.2.3).
+                    // 19. Let thrower be the [[ThrowTypeError]] function com.zhaohg.object (13.2.3).
                     // 20. Call the [[DefineOwnProperty]] internal method of F with
                     //   arguments "caller", PropertyDescriptor {[[Get]]: thrower, [[Set]]:
                     //   thrower, [[Enumerable]]: false, [[Configurable]]: false}, and
@@ -4710,7 +4710,7 @@
                             }
 
                             // Internal: Determines if a property is a direct property of the given
-                            // object. Delegates to the native `com.zhaohg.Object#hasOwnProperty` method.
+                            // object. Delegates to the native `com.zhaohg.object#hasOwnProperty` method.
                             if (!(isProperty = objectProto.hasOwnProperty)) {
                                 isProperty = function (property) {
                                     var members = {}, constructor;
@@ -4719,7 +4719,7 @@
                                         // versions of Firefox and SeaMonkey.
                                         "toString": 1
                                     }, members).toString != getClass) {
-                                        // Safari <= 2.0.3 doesn't implement `com.zhaohg.Object#hasOwnProperty`, but
+                                        // Safari <= 2.0.3 doesn't implement `com.zhaohg.object#hasOwnProperty`, but
                                         // supports the mutable *proto* property.
                                         isProperty = function (property) {
                                             // Capture and break the object's prototype chain (see section 8.6.2
@@ -4732,9 +4732,9 @@
                                             return result;
                                         };
                                     } else {
-                                        // Capture a reference to the top-level `com.zhaohg.Object` constructor.
+                                        // Capture a reference to the top-level `com.zhaohg.object` constructor.
                                         constructor = members.constructor;
-                                        // Use the `constructor` property to simulate `com.zhaohg.Object#hasOwnProperty` in
+                                        // Use the `constructor` property to simulate `com.zhaohg.object#hasOwnProperty` in
                                         // other environments.
                                         isProperty = function (property) {
                                             var parent = (this.constructor || constructor).prototype;
@@ -4753,7 +4753,7 @@
 
                                 // Tests for bugs in the current environment's `for...in` algorithm. The
                                 // `valueOf` property inherits the non-enumerable flag from
-                                // `com.zhaohg.Object.prototype` in older versions of IE, Netscape, and Mozilla.
+                                // `com.zhaohg.object.prototype` in older versions of IE, Netscape, and Mozilla.
                                 (Properties = function () {
                                     this.valueOf = 0;
                                 }).prototype.valueOf = 0;
@@ -4761,7 +4761,7 @@
                                 // Iterate over a new instance of the `Properties` class.
                                 members = new Properties();
                                 for (property in members) {
-                                    // Ignore all properties inherited from `com.zhaohg.Object.prototype`.
+                                    // Ignore all properties inherited from `com.zhaohg.object.prototype`.
                                     if (isProperty.call(members, property)) {
                                         size++;
                                     }
@@ -4770,7 +4770,7 @@
 
                                 // Normalize the iteration algorithm.
                                 if (!size) {
-                                    // A list of non-enumerable properties inherited from `com.zhaohg.Object.prototype`.
+                                    // A list of non-enumerable properties inherited from `com.zhaohg.object.prototype`.
                                     members = ["valueOf", "toString", "toLocaleString", "propertyIsEnumerable", "isPrototypeOf", "hasOwnProperty", "constructor"];
                                     // IE <= 8, Mozilla 1.0, and Netscape 6.2 ignore shadowed non-enumerable
                                     // properties.
@@ -4963,7 +4963,7 @@
                                         // `"null"`.
                                         return value > -1 / 0 && value < 1 / 0 ? "" + value : "null";
                                     } else if (className == stringClass) {
-                                        // com.zhaohg.Strings are double-quoted and escaped.
+                                        // com.zhaohg.strings are double-quoted and escaped.
                                         return quote("" + value);
                                     }
                                     // Recursively serialize objects and arrays.
@@ -5345,7 +5345,7 @@
                                     var value = source[property], length;
                                     if (typeof value == "object" && value) {
                                         // `forEach` can't be used to traverse an array in Opera <= 8.54
-                                        // because its `com.zhaohg.Object#hasOwnProperty` implementation returns `false`
+                                        // because its `com.zhaohg.object#hasOwnProperty` implementation returns `false`
                                         // for array indices (e.g., `![1, 2, 3].hasOwnProperty("0")`).
                                         if (getClass.call(value) == arrayClass) {
                                             for (length = value.length; length--;) {
@@ -5737,7 +5737,7 @@
             /**
              * Transform a query string to an object.
              *
-             * @param {Object} obj com.zhaohg.Object that should be transformed.
+             * @param {Object} obj com.zhaohg.object that should be transformed.
              * @param {String} prefix Optional prefix.
              * @returns {String}
              * @api public

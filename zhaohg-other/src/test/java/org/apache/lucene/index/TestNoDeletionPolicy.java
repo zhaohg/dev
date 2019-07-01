@@ -57,9 +57,9 @@ public class TestNoDeletionPolicy extends LuceneTestCase {
         for (Method m : NoDeletionPolicy.class.getMethods()) {
             // getDeclaredMethods() returns just those methods that are declared on
             // NoDeletionPolicy. getMethods() returns those that are visible in that
-            // context, including ones from com.zhaohg.Object. So just filter out com.zhaohg.Object. If in
+            // context, including ones from com.zhaohg.object. So just filter out com.zhaohg.object. If in
             // the future IndexDeletionPolicy will become a class that extends a
-            // different class than com.zhaohg.Object, this will need to change.
+            // different class than com.zhaohg.object, this will need to change.
             if (m.getDeclaringClass() != Object.class) {
                 assertTrue(m + " is not overridden !", m.getDeclaringClass() == NoDeletionPolicy.class);
             }

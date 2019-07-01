@@ -4,7 +4,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.Base64;
 
 /**
- * Created by zhaohg on 2017/2/7.
+ * Created by zhaohg on 2018/2/7.
  */
 public class FinalizationDemo {
     public static void main(String[] args) throws UnsupportedEncodingException {
@@ -34,11 +34,11 @@ class Cake extends Object {
     
     public Cake(int id) {
         this.id = id;
-        System.out.println("Cake com.zhaohg.Object " + id + "is created");
+        System.out.println("Cake com.zhaohg.object " + id + "is created");
     }
     
     protected void finalize() throws java.lang.Throwable {
         super.finalize();
-        System.out.println("Cake com.zhaohg.Object " + id + "is disposed");
+        System.out.println("Cake com.zhaohg.object " + id + "is disposed");
     }
 }

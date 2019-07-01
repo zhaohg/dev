@@ -9,7 +9,7 @@ import io.netty.util.CharsetUtil;
 
 /**
  * TIME服务(时间协议的服务)
- * Created by zhaohg on 2017-11-21.
+ * Created by zhaohg on 2018-11-21.
  * <p>
  * 为了测试我们的时间服务器，我们可以使用UNIX的rdate命令：rdate -o <port> -p <host>
  */

@@ -12,7 +12,7 @@ import java.util.Map;
  * @program: elastic
  * @description: ES中 source 提取出 字段内容并转换类型 工具类
  * @author: zhaohg
- * @create: 2018-08-22 01:42
+ * @create: 2017-08-22 01:42
  **/
 public class EsSourceFieldParser {
     public static Gson gson = new Gson();

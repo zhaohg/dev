@@ -20,7 +20,7 @@ public class MQProducerImpl implements MQProducer {
     private              AmqpTemplate amqpTemplate;
 
     /* (non-Javadoc)
-     * @see com.stnts.tita.rm.api.mq.MQProducer#sendDataToQueue(java.lang.String, java.lang.com.zhaohg.Object)
+     * @see com.stnts.tita.rm.api.mq.MQProducer#sendDataToQueue(java.lang.String, java.lang.com.zhaohg.object)
      */
     @Override
     public void sendDataToQueue(String queueKey, Object object) {

@@ -7,7 +7,7 @@ import org.apache.rocketmq.common.message.Message;
 import org.apache.rocketmq.remoting.common.RemotingHelper;
 
 /**
- * Created by zhaohg on 2017-10-26.
+ * Created by zhaohg on 2018-10-26.
  */
 public class BroadcastProducer {
     public static void main(String[] args) throws Exception {

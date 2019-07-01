@@ -18,13 +18,7 @@ public class VolatileDemo {
     public static void main(String[] args) {
         final VolatileDemo volDemo = new VolatileDemo();
         for (int i = 0; i < 10; i++) {
-            new Thread(new Runnable() {
-
-                @Override
-                public void run() {
-                    volDemo.increase();
-                }
-            }).start();
+            new Thread(() -> volDemo.increase()).start();
         }
 
         //如果还有子线程在运行，主线程就让出CPU资源，

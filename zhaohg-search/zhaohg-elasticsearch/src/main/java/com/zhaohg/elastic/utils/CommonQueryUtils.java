@@ -16,7 +16,7 @@ import java.util.List;
  * @program: elastic
  * @description: 抽取出公共的执行查询和解析数据的代码
  * @author: zhaohg
- * @create: 2018-08-23 15:46
+ * @create: 2017-08-23 15:46
  **/
 public class CommonQueryUtils {
 
@@ -32,7 +32,7 @@ public class CommonQueryUtils {
             Book book = gson.fromJson(hit.getSourceAsString(), Book.class);
             // 自己解析
             /*Book book = new Book();
-            Map<String, Object> source = hit.getSourceAsMap();
+            Map<String, object> source = hit.getSourceAsMap();
             book.setId(EsSourceFieldParser.mapToString(source, "id"));
             book.setTitle(EsSourceFieldParser.mapToString(source, "title"));
             book.setAuthors(EsSourceFieldParser.matToList(source, "authors"));

@@ -5,8 +5,6 @@ import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
 
-import java.util.concurrent.Callable;
-
 /**
  * @program: guava
  * @description: 缓存
@@ -22,16 +20,15 @@ public class Test13 {
 
     public static void cacheLoader() {
         try {
-
-            LoadingCache<String, String> cahceBuilder = CacheBuilder
-                    .newBuilder()
-                    .build(new CacheLoader<String, String>() {
-                        @Override
-                        public String load(String key) throws Exception {
-                            String strProValue = "hello " + key + "!";
-                            return strProValue;
-                        }
-                    });
+            CacheLoader<String, String> cacheLoader = new CacheLoader<String, String>() {
+                @Override
+                public String load(String key) throws Exception {
+                    String strProValue = "hello " + key + "!";
+                    return strProValue;
+                }
+            };
+            LoadingCache<String, String> cahceBuilder = CacheBuilder.newBuilder().build(cacheLoader);
+            
             System.out.println(cahceBuilder.get("begincode"));  //hello begincode!
             System.out.println(cahceBuilder.get("begincode")); //hello begincode!
             System.out.println(cahceBuilder.get("wen")); //hello wen!
@@ -47,12 +44,9 @@ public class Test13 {
     public static void callback() {
         try {
             Cache<String, String> cache = CacheBuilder.newBuilder().maximumSize(1000).build();
-            String resultVal = cache.get("code", new Callable<String>() {
-                @Override
-                public String call() {
-                    String strProValue = "begin " + "code" + "!";
-                    return strProValue;
-                }
+            String resultVal = cache.get("code", () -> {
+                String strProValue = "begin " + "code" + "!";
+                return strProValue;
             });
             System.out.println("value : " + resultVal); //value : begin code!
         } catch (Exception e) {
